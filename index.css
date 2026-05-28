@@ -70,6 +70,7 @@ html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -222,6 +223,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
     text-align: center;
     padding: 160px 20px 80px;
     position: relative;
+    overflow: hidden;
 }
 .hero::before {
     content: '';
@@ -478,6 +480,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    max-width: 100%;
 }
 .categories-scroll::-webkit-scrollbar { display: none; }
 
@@ -516,7 +519,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
 /* ============================================================
    SECTION HEADERS
    ============================================================ */
-.section { padding: 80px 0; position: relative; }
+.section { padding: 80px 0; position: relative; overflow: hidden; }
 .section-header {
     display: flex;
     justify-content: space-between;
