@@ -182,17 +182,32 @@ if ($indexJs -match [regex]::Escape($slug)) {
     }
 }
 
-# ---- Step 6: Update sitemap.xml ----
+# ---- Step 6: Update sitemap.xml & HTML Sitemap ----
 $sitemapPath = Join-Path $ProjectRoot "sitemap.xml"
-$sitemap = Get-Content $sitemapPath -Raw -Encoding UTF8
+$sitemapHtmlPath = Join-Path $ProjectRoot "pages\sitemap-page.html"
 
-if ($sitemap -match [regex]::Escape("articles/$slug/")) {
-    Write-Host "  WARNING: Article already in sitemap.xml. Skipping..." -ForegroundColor Yellow
-} else {
-    $sitemapEntry = $metadata.sitemapEntry
-    $sitemap = $sitemap -replace '</urlset>', "$sitemapEntry`n</urlset>"
-    [System.IO.File]::WriteAllText($sitemapPath, $sitemap, [System.Text.Encoding]::UTF8)
-    Write-Host "  DONE: Sitemap entry added to sitemap.xml" -ForegroundColor Green
+if (Test-Path $sitemapPath) {
+    $sitemap = Get-Content $sitemapPath -Raw -Encoding UTF8
+    if ($sitemap -match [regex]::Escape("articles/$slug/")) {
+        Write-Host "  WARNING: Article already in sitemap.xml. Skipping..." -ForegroundColor Yellow
+    } else {
+        $sitemapEntry = $metadata.sitemapEntry
+        $sitemap = $sitemap -replace '</urlset>', "$sitemapEntry`n</urlset>"
+        [System.IO.File]::WriteAllText($sitemapPath, $sitemap, [System.Text.Encoding]::UTF8)
+        Write-Host "  DONE: Sitemap entry added to sitemap.xml" -ForegroundColor Green
+    }
+}
+
+if (Test-Path $sitemapHtmlPath) {
+    $sitemapHtml = Get-Content $sitemapHtmlPath -Raw -Encoding UTF8
+    if ($sitemapHtml -match [regex]::Escape("articles/$slug/")) {
+        Write-Host "  WARNING: Article already in HTML sitemap. Skipping..." -ForegroundColor Yellow
+    } else {
+        $htmlEntry = "<li><a href=`"/articles/$slug/`">$title</a></li>"
+        $sitemapHtml = $sitemapHtml -replace '(<ul class="sitemap-list">)(\s*)', "`$1`$2$htmlEntry`$2"
+        [System.IO.File]::WriteAllText($sitemapHtmlPath, $sitemapHtml, [System.Text.Encoding]::UTF8)
+        Write-Host "  DONE: HTML Sitemap updated" -ForegroundColor Green
+    }
 }
 
 # ---- Step 7: Git commit and push ----

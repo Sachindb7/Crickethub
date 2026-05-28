@@ -1,83 +1,63 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
   <url>
     <loc>https://crickethub.co.in/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <!-- Category Pages -->
-  <url>
-    <loc>https://crickethub.co.in/category/untold-stories/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>https://crickethub.co.in/category/rise-to-fame/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://crickethub.co.in/articles/the-night-virat-kohli-almost-quit-cricket/</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://crickethub.co.in/category/behind-the-scenes/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <priority>0.7</priority>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://crickethub.co.in/category/legendary-moments/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <priority>0.7</priority>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
   </url>
-
-  <!-- Essential Pages -->
+  <url>
+    <loc>https://crickethub.co.in/category/rise-to-fame/</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/category/untold-stories/</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
   <url>
     <loc>https://crickethub.co.in/pages/about.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://crickethub.co.in/pages/contact.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://crickethub.co.in/pages/privacy.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://crickethub.co.in/pages/terms.html</loc>
-    <lastmod>2026-05-28</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://crickethub.co.in/pages/disclaimer.html</loc>
-    <lastmod>2026-05-28</lastmod>
+    <priority>0.3</priority>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/pages/privacy.html</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://crickethub.co.in/pages/sitemap-page.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <changefreq>weekly</changefreq>
   </url>
-
-  <!-- Articles (add new articles below as you publish) -->
-
   <url>
-    <loc>https://crickethub.co.in/articles/the-night-virat-kohli-almost-quit-cricket/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://crickethub.co.in/pages/terms.html</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
   </url>
 </urlset>
