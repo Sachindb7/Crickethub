@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — CricketHub</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Explore our collection of untold cricket stories instead.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <a href="/" class="logo"><div class="logo-icon">🏏</div> CricketHub</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="/category/untold-stories/">Untold Stories</a>
+        <a href="/category/rise-to-fame/">Rise to Fame</a>
+        <a href="/pages/about.html">About</a>
+    </div>
+</nav>
+
+<main>
+    <div class="hero" style="padding-bottom: 120px;">
+        <div style="font-size: 6rem; margin-bottom: 16px;">🏏</div>
+        <h1>Bowled Out! <span class="gradient-text">404</span></h1>
+        <p>Looks like this page got clean bowled. It doesn't exist or has been moved. Let's get you back to the crease.</p>
+        <a href="/" class="hero-cta" style="margin-top: 24px;">
+            <i class="fas fa-home"></i> Back to Home
+        </a>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="logo"><div class="logo-icon">🏏</div> CricketHub</div>
+            <p>Untold cricket stories, legendary moments, and the human side of cricket.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+                <li><a href="/category/untold-stories/">Untold Stories</a></li>
+                <li><a href="/category/rise-to-fame/">Rise to Fame</a></li>
+                <li><a href="/category/behind-the-scenes/">Behind the Scenes</a></li>
+                <li><a href="/category/legendary-moments/">Legendary Moments</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                <li><a href="/pages/terms.html">Terms of Service</a></li>
+                <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 CricketHub.co.in. All rights reserved.</div>
+</footer>
+
+<script>
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('navToggle').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+</script>
+</body>
+</html>

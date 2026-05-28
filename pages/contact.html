@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Get in Touch with CricketHub | CricketHub.co.in</title>
+    <meta name="description" content="Have a story tip, feedback, or partnership inquiry? Get in touch with CricketHub. We'd love to hear from fellow cricket enthusiasts.">
+    <link rel="canonical" href="https://crickethub.co.in/pages/contact.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us — Get in Touch with CricketHub">
+    <meta property="og:description" content="Have a story tip, feedback, or partnership inquiry? Get in touch with CricketHub. We'd love to hear from fellow cricket enthusiasts.">
+    <meta property="og:url" content="https://crickethub.co.in/pages/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CricketHub">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us — Get in Touch with CricketHub">
+    <meta name="twitter:description" content="Have a story tip, feedback, or partnership inquiry? Get in touch with CricketHub. We'd love to hear from fellow cricket enthusiasts.">
+
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://crickethub.co.in/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://crickethub.co.in/pages/contact.html"
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="/" class="logo">
+            <div class="logo-icon">🏏</div>
+            CricketHub
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="/">Home</a>
+            <a href="/category/untold-stories/">Untold Stories</a>
+            <a href="/category/rise-to-fame/">Rise to Fame</a>
+            <a href="/category/behind-the-scenes/">Behind the Scenes</a>
+            <a href="/pages/about.html">About</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="/"><i class="fa-solid fa-house"></i> Home</a>
+        <span class="separator">/</span>
+        <span class="current">Contact</span>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1>Get in <span class="gradient-text">Touch</span></h1>
+        <p>Have a story tip, feedback, or just want to talk cricket? We'd love to hear from you.</p>
+    </section>
+
+    <!-- Page Content -->
+    <div class="page-content">
+
+        <!-- Contact Info -->
+        <div class="content-block">
+            <h2><i class="fa-solid fa-envelope"></i> Email Us Directly</h2>
+            <p>For quick inquiries, you can reach us at:</p>
+            <p><strong><a href="mailto:contact@crickethub.co.in">contact@crickethub.co.in</a></strong></p>
+            <p>We typically respond within 24–48 hours. For story tips and partnerships, please use the form below for a faster response.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="content-block">
+            <h2><i class="fa-solid fa-paper-plane"></i> Send Us a Message</h2>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY">
+                <input type="hidden" name="subject" value="New Contact Form Submission — CricketHub">
+                <input type="hidden" name="redirect" value="https://crickethub.co.in/pages/contact.html">
+
+                <div class="form-group">
+                    <label for="name">Your Name <span style="color: var(--red);">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span style="color: var(--red);">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject <span style="color: var(--red);">*</span></label>
+                    <select id="subject" name="subject_type" required>
+                        <option value="" disabled selected>Select a subject</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Story Tip">Story Tip</option>
+                        <option value="Partnership">Partnership</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message <span style="color: var(--red);">*</span></label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo"><div class="logo-icon">🏏</div> CricketHub</div>
+                <p>Untold cricket stories, legendary moments, and the human side of cricket that you never knew. Every story is a journey worth reading.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="/category/untold-stories/">Untold Stories</a></li>
+                    <li><a href="/category/rise-to-fame/">Rise to Fame</a></li>
+                    <li><a href="/category/behind-the-scenes/">Behind the Scenes</a></li>
+                    <li><a href="/category/legendary-moments/">Legendary Moments</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                    <li><a href="/pages/sitemap-page.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/pages/terms.html">Terms of Service</a></li>
+                    <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 CricketHub.co.in. All rights reserved. | Built with ❤️ for cricket lovers
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner" style="display:none;">
+        <span>We use cookies to improve your experience and for analytics. By continuing, you agree to our <a href="/pages/privacy.html">Privacy Policy</a>.</span>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+    <script>
+        if (!localStorage.getItem('cookiesAccepted')) { document.getElementById('cookieBanner').style.display = 'flex'; }
+        function acceptCookies() { localStorage.setItem('cookiesAccepted', 'true'); document.getElementById('cookieBanner').style.display = 'none'; }
+        // Navbar scroll
+        window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+        // Mobile nav toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

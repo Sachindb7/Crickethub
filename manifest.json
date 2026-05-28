@@ -1,0 +1,16 @@
+{
+    "name": "CricketHub — Untold Cricket Stories",
+    "short_name": "CricketHub",
+    "description": "Discover untold cricket stories, legendary moments, and the human side of cricket.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#06080f",
+    "theme_color": "#f59e0b",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

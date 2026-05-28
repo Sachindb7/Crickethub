@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind the Scenes — Cricket's Insider Stories | CricketHub</title>
+    <meta name="description" content="Go behind the scenes of cricket — inside dressing rooms, IPL auctions, selection meetings, and the untold dynamics between players and boards.">
+    <link rel="canonical" href="https://crickethub.co.in/category/behind-the-scenes/">
+    <meta property="og:title" content="Behind the Scenes — Cricket's Insider Stories | CricketHub">
+    <meta property="og:description" content="Go behind the scenes of cricket — dressing rooms, IPL auctions, selection meetings and more.">
+    <meta property="og:url" content="https://crickethub.co.in/category/behind-the-scenes/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CricketHub">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://crickethub.co.in/"},{"@type":"ListItem","position":2,"name":"Behind the Scenes"}]}
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+    <a href="/" class="logo"><div class="logo-icon">🏏</div> CricketHub</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="/category/untold-stories/">Untold Stories</a>
+        <a href="/category/rise-to-fame/">Rise to Fame</a>
+        <a href="/category/behind-the-scenes/" class="active">Behind the Scenes</a>
+        <a href="/pages/about.html">About</a>
+    </div>
+</nav>
+<main>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> <span class="separator">›</span> <span class="current">Behind the Scenes</span></nav>
+    <div class="category-hero">
+        <h1>🎬 <span class="gradient-text">Behind the Scenes</span></h1>
+        <p>What happens inside dressing rooms, during auctions, and behind closed doors of cricket's power corridors. The insider view.</p>
+        <span class="article-count"><i class="fas fa-newspaper"></i> <span id="catCount">0</span> Stories</span>
+    </div>
+    <section class="section" style="padding-top: 20px;">
+        <div class="container">
+            <div class="articles-grid stagger-children" id="categoryGrid"></div>
+            <div id="emptyCat" class="newsletter-section" style="margin-top: 24px;">
+                <div style="font-size: 3rem; margin-bottom: 16px;">🎬</div>
+                <h2>Stories Coming Soon!</h2>
+                <p>Insider stories are being uncovered. Stay tuned!</p>
+            </div>
+        </div>
+    </section>
+    <section class="section"><div class="container"><div class="newsletter-section fade-in">
+        <h2>Never Miss a <span class="gradient-text">Story</span></h2>
+        <p>Get behind-the-scenes cricket stories delivered to your inbox.</p>
+        <form class="newsletter-form" onsubmit="return handleNewsletter(event)">
+            <input type="email" placeholder="Enter your email" required aria-label="Email" id="newsletterEmail">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div></div></section>
+</main>
+<footer class="footer"><div class="footer-content"><div class="footer-brand"><div class="logo"><div class="logo-icon">🏏</div> CricketHub</div><p>Untold cricket stories and the human side of cricket.</p></div><div class="footer-col"><h4>Categories</h4><ul><li><a href="/category/untold-stories/">Untold Stories</a></li><li><a href="/category/rise-to-fame/">Rise to Fame</a></li><li><a href="/category/behind-the-scenes/">Behind the Scenes</a></li><li><a href="/category/legendary-moments/">Legendary Moments</a></li></ul></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="/">Home</a></li><li><a href="/pages/about.html">About Us</a></li><li><a href="/pages/contact.html">Contact</a></li><li><a href="/pages/sitemap-page.html">Sitemap</a></li></ul></div><div class="footer-col"><h4>Legal</h4><ul><li><a href="/pages/privacy.html">Privacy Policy</a></li><li><a href="/pages/terms.html">Terms of Service</a></li><li><a href="/pages/disclaimer.html">Disclaimer</a></li></ul></div></div><div class="footer-bottom">&copy; 2026 CricketHub.co.in. All rights reserved.</div></footer>
+<div class="cookie-banner" id="cookieBanner" style="display:none;"><span>We use cookies. <a href="/pages/privacy.html">Privacy Policy</a>.</span><button onclick="acceptCookies()">Accept</button></div>
+<script src="/index.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const catArticles = ARTICLES.filter(a => a.categorySlug === 'behind-the-scenes');
+    const grid = document.getElementById('categoryGrid');
+    const empty = document.getElementById('emptyCat');
+    const count = document.getElementById('catCount');
+    if (count) count.textContent = catArticles.length;
+    if (catArticles.length === 0) { empty.style.display = ''; return; }
+    empty.style.display = 'none';
+    grid.innerHTML = catArticles.map(a => `<a href="/articles/${a.slug}/" class="article-card fade-in"><div class="card-image-wrapper"><img src="${a.image}" alt="${a.title}" loading="lazy"></div><div class="card-body"><span class="category-badge blue">${a.category}</span><h3>${a.title}</h3><p>${a.description}</p><div class="article-meta"><span><i class="fas fa-user"></i> CricketHub</span><span><i class="fas fa-calendar"></i> ${formatDate(a.date)}</span><span><i class="fas fa-clock"></i> ${a.readTime}</span></div></div></a>`).join('');
+    grid.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+});
+</script>
+</body>
+</html>
