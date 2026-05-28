@@ -100,11 +100,69 @@ New-Item -ItemType Directory -Path $articleDir -Force | Out-Null
 Copy-Item -Path $articleHtml.FullName -Destination (Join-Path $articleDir "index.html") -Force
 Write-Host "  DONE: Article HTML copied to articles/$slug/index.html" -ForegroundColor Green
 
+# ---- Step 4.5: Extract base64 images to files ----
+Write-Host ""
+Write-Host "  Extracting embedded images..." -ForegroundColor Cyan
+$artHtmlPath = Join-Path $articleDir "index.html"
+$artHtml = [System.IO.File]::ReadAllText($artHtmlPath, [System.Text.Encoding]::UTF8)
+
+$imgPattern = 'src="data:image/([^;]+);base64,([^"]+)"'
+$imgMatches = [regex]::Matches($artHtml, $imgPattern)
+$featuredImgPath = ""
+$imgIdx = 0
+
+foreach ($im in $imgMatches) {
+    $imgIdx++
+    $mimeExt = $im.Groups[1].Value
+    $b64 = $im.Groups[2].Value
+    $ext = switch ($mimeExt) {
+        'jpeg' { 'jpg' }
+        'jpg'  { 'jpg' }
+        default { $mimeExt }
+    }
+    $imgBytes = [Convert]::FromBase64String($b64)
+    # Detect AVIF even if declared as PNG
+    if ($imgBytes.Length -gt 12) {
+        $hdr = -join ($imgBytes[4..11] | ForEach-Object { [char]$_ })
+        if ($hdr -match 'ftyp') { $ext = 'avif' }
+    }
+    if ($imgIdx -eq 1) {
+        $fn = "featured.$ext"
+        $featuredImgPath = "/articles/$slug/$fn"
+    } else {
+        $num = $imgIdx - 1
+        $fn = "img-$num.$ext"
+    }
+    [System.IO.File]::WriteAllBytes((Join-Path $articleDir $fn), $imgBytes)
+    $sizeKB = [math]::Round($imgBytes.Length / 1024, 1)
+    Write-Host "  Saved: $fn (${sizeKB} KB)" -ForegroundColor Green
+    $artHtml = $artHtml.Replace($im.Value, "src=`"$fn`"")
+}
+
+# Fix og:image meta tags (replace base64 with real URL)
+$ogPat = 'content="data:image/[^"]+"'
+$ogMs = [regex]::Matches($artHtml, $ogPat)
+foreach ($og in $ogMs) {
+    $artHtml = $artHtml.Replace($og.Value, "content=`"https://crickethub.co.in$featuredImgPath`"")
+}
+
+[System.IO.File]::WriteAllText($artHtmlPath, $artHtml, [System.Text.Encoding]::UTF8)
+if ($imgIdx -gt 0) {
+    Write-Host "  DONE: $imgIdx images extracted, HTML updated with file paths" -ForegroundColor Green
+} else {
+    Write-Host "  No base64 images found (already using file paths)" -ForegroundColor Yellow
+}
+
 # ---- Step 5: Update index.js (add to ARTICLES array) ----
 $indexJsPath = Join-Path $ProjectRoot "index.js"
 $indexJs = Get-Content $indexJsPath -Raw -Encoding UTF8
 
 $jsEntry = $metadata.jsEntry
+# Replace base64 image in jsEntry with file path
+if ($featuredImgPath -and $jsEntry -match 'image:\s*"data:image/[^"]+?"') {
+    $jsEntry = $jsEntry -replace 'image:\s*"data:image/[^"]+?"', "image: `"$featuredImgPath`""
+    Write-Host "  Image path in ARTICLES entry: $featuredImgPath" -ForegroundColor Green
+}
 
 # Check if article already exists in index.js
 if ($indexJs -match [regex]::Escape($slug)) {
