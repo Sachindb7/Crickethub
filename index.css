@@ -750,8 +750,10 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
 .article-content ol li { list-style: decimal; }
 
 .article-content img {
+    display: block;
+    max-width: 100%;
     border-radius: var(--radius-lg);
-    margin: 24px 0;
+    margin: 32px auto;
     border: 1px solid var(--border);
 }
 .article-content figure {
