@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
@@ -74,4 +74,10 @@
 
   <!-- Articles (add new articles below as you publish) -->
 
+  <url>
+    <loc>https://crickethub.co.in/articles/the-night-virat-kohli-almost-quit-cricket/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
