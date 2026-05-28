@@ -25,10 +25,13 @@ if (-not $ZipPath) {
         for ($i = 0; $i -lt $recentZips.Count; $i++) {
             $size = [math]::Round($recentZips[$i].Length / 1KB, 1)
             $time = $recentZips[$i].LastWriteTime.ToString("MMM dd, hh:mm tt")
-            Write-Host "    [$($i+1)] $($recentZips[$i].Name) ($size KB, $time)" -ForegroundColor White
+            $num = $i + 1
+            $name = $recentZips[$i].Name
+            Write-Host "    [$num] $name ($size KB, $time)" -ForegroundColor White
         }
         Write-Host ""
-        $choice = Read-Host "  Enter number (1-$($recentZips.Count)) or full path to ZIP"
+        $maxCount = $recentZips.Count
+        $choice = Read-Host "  Enter number (1-$maxCount) or full path to ZIP"
 
         if ($choice -match '^\d+$' -and [int]$choice -ge 1 -and [int]$choice -le $recentZips.Count) {
             $ZipPath = $recentZips[[int]$choice - 1].FullName
