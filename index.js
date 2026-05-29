@@ -52,6 +52,7 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 // Articles are stored as a JSON array. When you add a new article via the admin panel,
 // you add its metadata here. The homepage reads from this array.
 const ARTICLES = [
+    { title: "The Next Sachin Who Never Made It: The Manish Pandey Story", slug: "the-next-sachin-who-never-made-it-the-manish-pandey-story", category: "Untold Stories", categorySlug: "untold-stories", description: "Before Virat Kohli became India's biggest star, many believed Manish Pandey would be India's next cricket superstar. What really happened?", image: "/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/featured.jpg", date: "2026-05-29", readTime: "6 min read", featured: false },
     { title: "The Night Virat Kohli Almost Quit Cricket", slug: "the-night-virat-kohli-almost-quit-cricket", category: "Untold Stories", categorySlug: "untold-stories", description: "On the night his father passed away, 18-year-old Virat Kohli made a decision nobody expected. This is the story cricket never puts in the highlight reels.", image: "/articles/the-night-virat-kohli-almost-quit-cricket/featured.avif", date: "2026-05-28", readTime: "6 min read", featured: false },
     // Example article object (uncomment and modify when you have articles):
     // {
