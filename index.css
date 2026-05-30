@@ -709,8 +709,12 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
 }
 .article-featured-image img {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: var(--radius-xl);
     border: 1px solid var(--border);
+    background: var(--surface);
 }
 
 /* Article content layout (content + sidebar) */
@@ -761,10 +765,16 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
 
 .article-content img {
     display: block;
+    width: 100%;
     max-width: 100%;
+    min-width: 200px;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
     border-radius: var(--radius-lg);
     margin: 32px auto;
     border: 1px solid var(--border);
+    background: var(--surface);
 }
 .article-content figure {
     margin: 32px 0;
