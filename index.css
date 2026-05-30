@@ -765,12 +765,9 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
 
 .article-content img {
     display: block;
-    width: 100%;
     max-width: 100%;
-    min-width: 200px;
+    width: 100%;
     height: auto;
-    max-height: 600px;
-    object-fit: cover;
     border-radius: var(--radius-lg);
     margin: 32px auto;
     border: 1px solid var(--border);
