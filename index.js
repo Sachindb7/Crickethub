@@ -52,7 +52,10 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 // Articles are stored as a JSON array. When you add a new article via the admin panel,
 // you add its metadata here. The homepage reads from this array.
 const ARTICLES = [
-    { title: "Kane Williamson Just Retired. He Was the Quietest Great Cricketer We'll Ever See", slug: "kane-williamson-retired-quietest-great-cricketer", category: "Legendary Moments", categorySlug: "legendary-moments", description: "Kane Williamson retired today. 19,346 runs, 48 centuries, WTC champion, Fab Four member. No drama, no noise. Just pure cricket.", image: "/articles/kane-williamson-retired-quietest-great-cricketer/featured.avif", date: "2026-06-12", readTime: "8 min read", featured: true },
+    { title: "Why Indian Fast Bowlers Break Down Every 6 Months. The Ugly Truth Nobody Wants to Hear", slug: "why-indian-fast-bowlers-break-down-every-6-months", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bumrah, Shami, Bhuvi — India keeps losing its best pace bowlers. Here's the ugly truth about IPL workload and BCCI scheduling.", image: "/articles/why-indian-fast-bowlers-break-down-every-6-months/featured.jpg", date: "2026-06-18", readTime: "8 min read", featured: false },
+    { title: "MS Dhoni's Last Night as a CSK Player. The Farewell Nobody Filmed", slug: "ms-dhoni-last-night-csk-farewell-nobody-filmed", category: "Untold Stories", categorySlug: "untold-stories", description: "MS Dhoni played his last IPL match. No announcement. No grand farewell. Here's what happened when the cameras stopped rolling.", image: "/articles/ms-dhoni-last-night-csk-farewell-nobody-filmed/featured.png", date: "2026-06-16", readTime: "9 min read", featured: false },
+    { title: "What Happens When the IPL Stops Calling Your Name", slug: "what-happens-when-ipl-stops-calling-your-name", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Every IPL auction creates millionaires. But what happens to the players who stop getting bought? The silence nobody prepares you for.", image: "/articles/what-happens-when-ipl-stops-calling-your-name/featured.png", date: "2026-06-14", readTime: "8 min read", featured: false },
+    { title: "Kane Williamson Just Retired. He Was the Quietest Great Cricketer We'll Ever See", slug: "kane-williamson-retired-quietest-great-cricketer", category: "Legendary Moments", categorySlug: "legendary-moments", description: "Kane Williamson retired today. 19,346 runs, 48 centuries, WTC champion, Fab Four member. No drama, no noise. Just pure cricket.", image: "/articles/kane-williamson-retired-quietest-great-cricketer/featured.avif", date: "2026-06-12", readTime: "8 min read", featured: false },
     { title: "They Called Him the Next Dhoni. Then CSK Finished 8th and Everything Fell Apart", slug: "ruturaj-gaikwad-next-dhoni-csk-finished-8th", category: "Rise to Fame", categorySlug: "rise-to-fame", description: "Ruturaj Gaikwad went from Orange Cap winner to CSK's worst season ever. The captaincy crushed his batting, critics piled on, and Dhoni's shadow never left.", image: "/articles/ruturaj-gaikwad-next-dhoni-csk-finished-8th/featured.jpg", date: "2026-06-09", readTime: "8 min read", featured: false },
     { title: "Your Favourite IPL Star Earns ₹16 Crore. Here's What He Actually Takes Home", slug: "ipl-salary-what-cricketers-actually-take-home", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "IPL auction prices look massive. But after tax, agent fees, and hidden costs, a ₹16 crore contract shrinks fast. Here's what cricketers actually earn.", image: "/articles/ipl-salary-what-cricketers-actually-take-home/featured.jpg", date: "2026-06-05", readTime: "7 min read", featured: false },
     { title: "28 Wickets, 2 IPL Titles, and Still No India Call. The Bhuvneshwar Kumar Story Nobody Talks About", slug: "bhuvneshwar-kumar-28-wickets-2-ipl-titles-still-no-india-call", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bhuvneshwar Kumar took 28 wickets in IPL 2026, helped RCB win back-to-back titles, crossed 350 T20 wickets. India still hasn't called.", image: "/articles/bhuvneshwar-kumar-28-wickets-2-ipl-titles-still-no-india-call/featured.webp", date: "2026-06-04", readTime: "8 min read", featured: false },
@@ -100,12 +103,17 @@ function renderArticles() {
 
     if (!grid) return;
 
+    // Filter articles: only show articles whose date is today or earlier
+    const today = new Date();
+    today.setHours(23, 59, 59, 999);
+    const publishedArticles = ARTICLES.filter(a => new Date(a.date) <= today);
+
     // Update article count
     if (countEl) {
-        animateCounter(countEl, ARTICLES.length);
+        animateCounter(countEl, publishedArticles.length);
     }
 
-    if (ARTICLES.length === 0) {
+    if (publishedArticles.length === 0) {
         if (emptyState) emptyState.style.display = '';
         if (featuredEl) featuredEl.style.display = 'none';
         grid.innerHTML = '';
@@ -114,9 +122,9 @@ function renderArticles() {
 
     if (emptyState) emptyState.style.display = 'none';
 
-    // Find featured article
-    const featured = ARTICLES.find(a => a.featured) || ARTICLES[0];
-    const restArticles = ARTICLES.filter(a => a !== featured);
+    // Featured = newest published article
+    const featured = publishedArticles[0];
+    const restArticles = publishedArticles.filter(a => a !== featured);
 
     // Render featured
     if (featuredEl && featured) {
