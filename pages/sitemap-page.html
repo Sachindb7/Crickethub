@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -116,29 +116,25 @@
             <h2><i class="fa-solid fa-folder-open"></i> Categories</h2>
             <div class="sitemap-group">
                 <h3>🔍 Untold Stories</h3>
-                <ul class="sitemap-list">
-                    <li><a href="/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/">The Next Sachin Who Never Made It: The Manish Pandey Story</a></li>
+                <ul class="sitemap-list" id="sitemap-untold-stories">
                     <li><a href="/category/untold-stories/">Browse All Untold Stories</a></li>
                 </ul>
             </div>
             <div class="sitemap-group">
                 <h3>⭐ Rise to Fame</h3>
-                <ul class="sitemap-list">
-                    <li><a href="/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/">The Next Sachin Who Never Made It: The Manish Pandey Story</a></li>
+                <ul class="sitemap-list" id="sitemap-rise-to-fame">
                     <li><a href="/category/rise-to-fame/">Browse All Rise to Fame Stories</a></li>
                 </ul>
             </div>
             <div class="sitemap-group">
                 <h3>🎬 Behind the Scenes</h3>
-                <ul class="sitemap-list">
-                    <li><a href="/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/">The Next Sachin Who Never Made It: The Manish Pandey Story</a></li>
+                <ul class="sitemap-list" id="sitemap-behind-the-scenes">
                     <li><a href="/category/behind-the-scenes/">Browse All Behind the Scenes Stories</a></li>
                 </ul>
             </div>
             <div class="sitemap-group">
                 <h3>🏆 Legendary Moments</h3>
-                <ul class="sitemap-list">
-                    <li><a href="/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/">The Next Sachin Who Never Made It: The Manish Pandey Story</a></li>
+                <ul class="sitemap-list" id="sitemap-legendary-moments">
                     <li><a href="/category/legendary-moments/">Browse All Legendary Moments</a></li>
                 </ul>
             </div>
@@ -147,10 +143,8 @@
         <!-- Latest Articles -->
         <div class="content-block">
             <h2><i class="fa-solid fa-newspaper"></i> Latest Articles</h2>
-            <div class="sitemap-group" id="sitemap-articles-list">
-                <ul class="sitemap-list">
-                    <li><a href="/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/">The Next Sachin Who Never Made It: The Manish Pandey Story</a></li>
-                    <li><a href="/articles/the-night-virat-kohli-almost-quit-cricket/">The Night Virat Kohli Almost Quit Cricket</a></li>
+            <div class="sitemap-group">
+                <ul class="sitemap-list" id="sitemap-articles-list">
                 </ul>
             </div>
         </div>
@@ -201,15 +195,49 @@
         <span>We use cookies to improve your experience and for analytics. By continuing, you agree to our <a href="/pages/privacy">Privacy Policy</a>.</span>
         <button onclick="acceptCookies()">Accept</button>
     </div>
+    
+    <script src="/index.js"></script>
     <script>
         if (!localStorage.getItem('cookiesAccepted')) { document.getElementById('cookieBanner').style.display = 'flex'; }
         function acceptCookies() { localStorage.setItem('cookiesAccepted', 'true'); document.getElementById('cookieBanner').style.display = 'none'; }
+        
         // Navbar scroll
         window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+        
         // Mobile nav toggle
         document.getElementById('navToggle').addEventListener('click', function() {
             this.classList.toggle('active');
             document.getElementById('navLinks').classList.toggle('open');
+        });
+
+        // Populate sitemap dynamically
+        document.addEventListener('DOMContentLoaded', () => {
+            const today = new Date();
+            today.setHours(23, 59, 59, 999);
+            const publishedArticles = ARTICLES.filter(a => new Date(a.date) <= today);
+
+            const latestList = document.getElementById('sitemap-articles-list');
+            const catLists = {
+                'untold-stories': document.getElementById('sitemap-untold-stories'),
+                'rise-to-fame': document.getElementById('sitemap-rise-to-fame'),
+                'behind-the-scenes': document.getElementById('sitemap-behind-the-scenes'),
+                'legendary-moments': document.getElementById('sitemap-legendary-moments')
+            };
+
+            // Reverse to show newest at top of latest articles list
+            publishedArticles.forEach(article => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = `/articles/${article.slug}/`;
+                a.textContent = article.title;
+                li.appendChild(a);
+                
+                if(latestList) latestList.appendChild(li.cloneNode(true));
+                
+                if(catLists[article.categorySlug]) {
+                    catLists[article.categorySlug].insertBefore(li.cloneNode(true), catLists[article.categorySlug].firstChild);
+                }
+            });
         });
     </script>
 
