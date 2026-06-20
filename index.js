@@ -122,7 +122,7 @@ const ARTICLES = [
         category: "Untold Stories",
         categorySlug: "untold-stories",
         excerpt: "MS Dhoni's run out broke a billion hearts, but the 2019 World Cup semi-final was lost due to a controversial rule nobody talks about anymore.",
-        image: "/articles/the-2019-world-cup-heartbreak-rule-cost-india-the-cup/featured.jpg"
+        image: "/articles/the-2019-world-cup-heartbreak-rule-cost-india-the-cup/featured.png"
     },
     { title: "Why Indian Fast Bowlers Break Down Every 6 Months. The Ugly Truth Nobody Wants to Hear", slug: "why-indian-fast-bowlers-break-down-every-6-months", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bumrah, Shami, Bhuvi — India keeps losing its best pace bowlers. Here's the ugly truth about IPL workload and BCCI scheduling.", image: "/articles/why-indian-fast-bowlers-break-down-every-6-months/featured.jpg", date: "2026-06-18", readTime: "8 min read", featured: false },
     { title: "MS Dhoni's Last Night as a CSK Player. The Farewell Nobody Filmed", slug: "ms-dhoni-last-night-csk-farewell-nobody-filmed", category: "Untold Stories", categorySlug: "untold-stories", description: "MS Dhoni played his last IPL match. No announcement. No grand farewell. Here's what happened when the cameras stopped rolling.", image: "/articles/ms-dhoni-last-night-csk-farewell-nobody-filmed/featured.png", date: "2026-06-16", readTime: "9 min read", featured: false },
