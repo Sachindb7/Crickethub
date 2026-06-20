@@ -52,6 +52,78 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 // Articles are stored as a JSON array. When you add a new article via the admin panel,
 // you add its metadata here. The homepage reads from this array.
 const ARTICLES = [
+    {
+        title: "The Slow Death of ODI Cricket: Why 50-Over Matches Are Disappearing Forever",
+        slug: "slow-death-of-odi-cricket-50-overs-disappearing",
+        date: "2026-06-27T10:00:00Z",
+        category: "Untold Stories",
+        categorySlug: "untold-stories",
+        excerpt: "Between the explosion of T20 leagues and the prestige of Test cricket, the 50-over format is dying a slow, quiet death. Here is why ODI cricket is fading away.",
+        image: "/articles/slow-death-of-odi-cricket-50-overs-disappearing/featured.jpg"
+    },
+    {
+        title: "Why Umpiring is the Most Thankless Job in Cricket",
+        slug: "why-umpiring-most-thankless-job-in-cricket",
+        date: "2026-06-26T10:00:00Z",
+        category: "Behind the Scenes",
+        categorySlug: "behind-the-scenes",
+        excerpt: "One mistake and the world hates you. Technology exposes every error. The psychological toll of being a cricket umpire in the modern era.",
+        image: "/articles/why-umpiring-most-thankless-job-in-cricket/featured.jpg"
+    },
+    {
+        title: "The 175 That Changed Cricket: When Kapil Dev Saved India",
+        slug: "175-that-changed-cricket-kapil-dev-1983",
+        date: "2026-06-25T10:00:00Z",
+        category: "Legendary Moments",
+        categorySlug: "legendary-moments",
+        excerpt: "In 1983, India was 17/5 against Zimbabwe. Kapil Dev walked in and scored 175*. But there is no video footage of the greatest innings in Indian cricket history.",
+        image: "/articles/175-that-changed-cricket-kapil-dev-1983/featured.jpg"
+    },
+    {
+        title: "The ₹1 Lakh Bat: What Actually Goes Into Making an International Cricket Bat?",
+        slug: "cost-of-making-international-cricket-bat",
+        date: "2026-06-24T10:00:00Z",
+        category: "Behind the Scenes",
+        categorySlug: "behind-the-scenes",
+        excerpt: "Why do international cricket bats cost over ₹1,000,000? From English Willow grades to custom sweet spots, the secret science of bat making.",
+        image: "/articles/cost-of-making-international-cricket-bat/featured.jpg"
+    },
+    {
+        title: "The Loneliest Job in Cricket: What It Actually Feels Like to Be the 12th Man",
+        slug: "loneliest-job-in-cricket-12th-man-reality",
+        date: "2026-06-23T10:00:00Z",
+        category: "Untold Stories",
+        categorySlug: "untold-stories",
+        excerpt: "Carrying drinks, mixing energy powders, and watching others live your dream. The psychological reality of being a reserve player in the Indian cricket team.",
+        image: "/articles/loneliest-job-in-cricket-12th-man-reality/featured.jpg"
+    },
+    {
+        title: "Smriti Mandhana: Why She Is The Most Elegant Batter in World Cricket Right Now",
+        slug: "smriti-mandhana-most-elegant-batter-world-cricket",
+        date: "2026-06-22T10:00:00Z",
+        category: "Rise to Fame",
+        categorySlug: "rise-to-fame",
+        excerpt: "There is batting, and then there is art. Why Smriti Mandhana's cover drive is the most aesthetically pleasing shot in modern cricket, male or female.",
+        image: "/articles/smriti-mandhana-most-elegant-batter-world-cricket/featured.jpg"
+    },
+    {
+        title: "Why Left-Arm Pacers Always Destroy India's Top Order",
+        slug: "why-left-arm-pacers-destroy-india-top-order",
+        date: "2026-06-21T10:00:00Z",
+        category: "Behind the Scenes",
+        categorySlug: "behind-the-scenes",
+        excerpt: "From Trent Boult to Shaheen Afridi to Mitchell Starc, left-arm fast bowlers have been India's kryptonite for a decade. What's the technical reason behind this collapse?",
+        image: "/articles/why-left-arm-pacers-destroy-india-top-order/featured.jpg"
+    },
+    {
+        title: "The 2019 World Cup Heartbreak: The Rule That Cost India The Cup",
+        slug: "the-2019-world-cup-heartbreak-rule-cost-india-the-cup",
+        date: "2026-06-20T10:00:00Z",
+        category: "Untold Stories",
+        categorySlug: "untold-stories",
+        excerpt: "MS Dhoni's run out broke a billion hearts, but the 2019 World Cup semi-final was lost due to a controversial rule nobody talks about anymore.",
+        image: "/articles/the-2019-world-cup-heartbreak-rule-cost-india-the-cup/featured.jpg"
+    },
     { title: "Why Indian Fast Bowlers Break Down Every 6 Months. The Ugly Truth Nobody Wants to Hear", slug: "why-indian-fast-bowlers-break-down-every-6-months", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bumrah, Shami, Bhuvi — India keeps losing its best pace bowlers. Here's the ugly truth about IPL workload and BCCI scheduling.", image: "/articles/why-indian-fast-bowlers-break-down-every-6-months/featured.jpg", date: "2026-06-18", readTime: "8 min read", featured: false },
     { title: "MS Dhoni's Last Night as a CSK Player. The Farewell Nobody Filmed", slug: "ms-dhoni-last-night-csk-farewell-nobody-filmed", category: "Untold Stories", categorySlug: "untold-stories", description: "MS Dhoni played his last IPL match. No announcement. No grand farewell. Here's what happened when the cameras stopped rolling.", image: "/articles/ms-dhoni-last-night-csk-farewell-nobody-filmed/featured.png", date: "2026-06-16", readTime: "9 min read", featured: false },
     { title: "What Happens When the IPL Stops Calling Your Name", slug: "what-happens-when-ipl-stops-calling-your-name", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Every IPL auction creates millionaires. But what happens to the players who stop getting bought? The silence nobody prepares you for.", image: "/articles/what-happens-when-ipl-stops-calling-your-name/featured.png", date: "2026-06-14", readTime: "8 min read", featured: false },

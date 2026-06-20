@@ -120,4 +120,44 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/slow-death-of-odi-cricket-50-overs-disappearing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/why-umpiring-most-thankless-job-in-cricket/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/175-that-changed-cricket-kapil-dev-1983/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/cost-of-making-international-cricket-bat/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/loneliest-job-in-cricket-12th-man-reality/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/smriti-mandhana-most-elegant-batter-world-cricket/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/why-left-arm-pacers-destroy-india-top-order/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://crickethub.co.in/articles/the-2019-world-cup-heartbreak-rule-cost-india-the-cup/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
