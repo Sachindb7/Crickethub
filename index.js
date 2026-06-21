@@ -59,7 +59,7 @@ const ARTICLES = [
         category: "Untold Stories",
         categorySlug: "untold-stories",
         excerpt: "Between the explosion of T20 leagues and the prestige of Test cricket, the 50-over format is dying a slow, quiet death. Here is why ODI cricket is fading away.",
-        image: "/articles/slow-death-of-odi-cricket-50-overs-disappearing/featured.jpg"
+        image: "/articles/slow-death-of-odi-cricket-50-overs-disappearing/featured.avif"
     },
     {
         title: "Why Umpiring is the Most Thankless Job in Cricket",
@@ -86,7 +86,7 @@ const ARTICLES = [
         category: "Behind the Scenes",
         categorySlug: "behind-the-scenes",
         excerpt: "Why do international cricket bats cost over ₹1,000,000? From English Willow grades to custom sweet spots, the secret science of bat making.",
-        image: "/articles/cost-of-making-international-cricket-bat/featured.jpg"
+        image: "/articles/cost-of-making-international-cricket-bat/featured.png"
     },
     {
         title: "The Loneliest Job in Cricket: What It Actually Feels Like to Be the 12th Man",
