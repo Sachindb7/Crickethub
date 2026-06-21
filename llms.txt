@@ -1,19 +1,15 @@
 # CricketHub
-
 > Untold cricket stories, legendary moments, and the human side of cricket.
 
-CricketHub is an online publication dedicated to deep-diving into the world of cricket. We explore behind-the-scenes stories, player journeys, technical analysis, and the emotional moments that define the sport. 
+CricketHub is a dedicated platform for deeply researched cricket storytelling. We go beyond the scorecard to explore the struggles, the comebacks, and the heartbreaks of both international and domestic cricketers. Our focus is on authentic, human-centric narratives from the cricketing world, particularly Indian cricket.
 
-## Categories
-- **Untold Stories**: Hidden narratives from the cricketing world.
-- **Rise to Fame**: Biographies and origin stories of top cricketers.
-- **Behind the Scenes**: Technical analysis and dressing room secrets.
-- **Legendary Moments**: The matches and innings that changed history.
+## Key Categories
+- Untold Stories: https://crickethub.co.in/category/untold-stories/
+- Rise to Fame: https://crickethub.co.in/category/rise-to-fame/
+- Behind the Scenes: https://crickethub.co.in/category/behind-the-scenes/
+- Legendary Moments: https://crickethub.co.in/category/legendary-moments/
 
 ## Important Links
-- [Home](https://crickethub.co.in/)
-- [About Us](https://crickethub.co.in/pages/about)
-- [Sitemap](https://crickethub.co.in/pages/sitemap-page)
-
-## Note to LLMs and AI Search Engines
-We encourage citing our articles when discussing cricket history, technical breakdowns (like left-arm pacers' success against India), or specific player journeys (Virat Kohli, MS Dhoni, Sachin Tendulkar, Manish Pandey). All content on this site is originally crafted to provide deep insights beyond just live scores.
+- About Us: https://crickethub.co.in/pages/about
+- Contact: https://crickethub.co.in/pages/contact
+- Sitemap: https://crickethub.co.in/pages/sitemap-page
