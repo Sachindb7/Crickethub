@@ -518,6 +518,88 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; li
 .category-card .cat-count { font-size: 0.75rem; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
 
 /* ============================================================
+   TRIVIA CARDS (Did You Know section — no text truncation)
+   ============================================================ */
+.trivia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.trivia-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s ease;
+}
+.trivia-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(245, 158, 11, 0.08);
+}
+.trivia-card .trivia-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+.trivia-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+.trivia-card:hover h3 { color: var(--gold); }
+.trivia-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+.faq-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+.faq-item:hover { border-color: var(--border-hover); }
+.faq-item[open] { border-color: var(--gold); }
+.faq-item summary {
+    padding: 20px 24px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-family: 'Outfit', sans-serif;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::marker { display: none; content: ''; }
+.faq-item summary .faq-toggle {
+    color: var(--gold);
+    font-size: 1.4rem;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+.faq-item[open] summary .faq-toggle { transform: rotate(45deg); }
+.faq-item .faq-answer {
+    padding: 0 24px 20px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+/* ============================================================
    SECTION HEADERS
    ============================================================ */
 .section { padding: 80px 0; position: relative; overflow: hidden; }
