@@ -5,7 +5,7 @@ with open('index.js', 'r', encoding='utf-8') as f:
     js_content = f.read()
 
 articles = []
-for match in re.finditer(r"slug:\s*'([^']+)'[\s\S]*?date:\s*'([^']+)'", js_content):
+for match in re.finditer(r"slug:\s*['\"]([^'\"]+)['\"][\s\S]*?date:\s*['\"]([^'\"]+)['\"]", js_content):
     slug = match.group(1)
     date_str = match.group(2)
     articles.append((slug, date_str))
