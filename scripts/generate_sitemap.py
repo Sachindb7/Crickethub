@@ -78,7 +78,7 @@ for slug, date_str in articles:
     if slug in added_slugs:
         continue
     try:
-        article_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
+        article_date = datetime.datetime.strptime(date_str[:10], "%Y-%m-%d").date()
         if article_date <= today:
             xml_content += f"""  <url>
     <loc>https://crickethub.co.in/articles/{slug}/</loc>
