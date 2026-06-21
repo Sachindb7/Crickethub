@@ -113,7 +113,7 @@ const ARTICLES = [
         category: "Behind the Scenes",
         categorySlug: "behind-the-scenes",
         excerpt: "From Trent Boult to Shaheen Afridi to Mitchell Starc, left-arm fast bowlers have been India's kryptonite for a decade. What's the technical reason behind this collapse?",
-        image: "/articles/why-left-arm-pacers-destroy-india-top-order/featured.jpg"
+        image: "/articles/why-left-arm-pacers-destroy-india-top-order/featured.webp"
     },
     {
         title: "The 2019 World Cup Heartbreak: The Rule That Cost India The Cup",
