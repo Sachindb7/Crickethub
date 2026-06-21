@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+import re
+import datetime
+
+with open('index.js', 'r', encoding='utf-8') as f:
+    js_content = f.read()
+
+articles = []
+for match in re.finditer(r"slug:\s*'([^']+)'[\s\S]*?date:\s*'([^']+)'", js_content):
+    slug = match.group(1)
+    date_str = match.group(2)
+    articles.append((slug, date_str))
+
+today = datetime.datetime.utcnow().date()
+
+xml_content = """<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://crickethub.co.in/</loc>
@@ -55,4 +69,31 @@
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
-</urlset>
+"""
+
+# Track unique slugs to avoid duplicates in case of errors
+added_slugs = set()
+
+for slug, date_str in articles:
+    if slug in added_slugs:
+        continue
+    try:
+        article_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").date()
+        if article_date <= today:
+            xml_content += f"""  <url>
+    <loc>https://crickethub.co.in/articles/{slug}/</loc>
+    <lastmod>{date_str}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+"""
+            added_slugs.add(slug)
+    except Exception as e:
+        print(f"Error parsing date for {slug}: {e}")
+
+xml_content += "</urlset>\n"
+
+with open('sitemap.xml', 'w', encoding='utf-8') as f:
+    f.write(xml_content)
+
+print("sitemap.xml updated successfully!")
