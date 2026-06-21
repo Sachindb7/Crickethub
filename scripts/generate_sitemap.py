@@ -82,7 +82,7 @@ for slug, date_str in articles:
         if article_date <= today:
             xml_content += f"""  <url>
     <loc>https://crickethub.co.in/articles/{slug}/</loc>
-    <lastmod>{date_str}</lastmod>
+    <lastmod>{date_str[:10]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
