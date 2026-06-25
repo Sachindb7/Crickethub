@@ -58,7 +58,7 @@ const ARTICLES = [
         date: "2026-06-27T10:00:00Z",
         category: "Untold Stories",
         categorySlug: "untold-stories",
-        excerpt: "Between the explosion of T20 leagues and the prestige of Test cricket, the 50-over format is dying a slow, quiet death. Here is why ODI cricket is fading away.",
+        description: "Between the explosion of T20 leagues and the prestige of Test cricket, the 50-over format is dying a slow, quiet death. Here is why ODI cricket is fading away.", readTime: "8 min read", featured: false,
         image: "/articles/slow-death-of-odi-cricket-50-overs-disappearing/featured.avif"
     },
     {
@@ -67,7 +67,7 @@ const ARTICLES = [
         date: "2026-06-26T10:00:00Z",
         category: "Behind the Scenes",
         categorySlug: "behind-the-scenes",
-        excerpt: "One mistake and the world hates you. Technology exposes every error. The psychological toll of being a cricket umpire in the modern era.",
+        description: "One mistake and the world hates you. Technology exposes every error. The psychological toll of being a cricket umpire in the modern era.", readTime: "8 min read", featured: false,
         image: "/articles/why-umpiring-most-thankless-job-in-cricket/featured.jpg"
     },
     {
@@ -76,7 +76,7 @@ const ARTICLES = [
         date: "2026-06-25T10:00:00Z",
         category: "Legendary Moments",
         categorySlug: "legendary-moments",
-        excerpt: "In 1983, India was 17/5 against Zimbabwe. Kapil Dev walked in and scored 175*. But there is no video footage of the greatest innings in Indian cricket history.",
+        description: "In 1983, India was 17/5 against Zimbabwe. Kapil Dev walked in and scored 175*. But there is no video footage of the greatest innings in Indian cricket history.", readTime: "8 min read", featured: false,
         image: "/articles/175-that-changed-cricket-kapil-dev-1983/featured.jpg"
     },
     {
@@ -85,7 +85,7 @@ const ARTICLES = [
         date: "2026-06-24T10:00:00Z",
         category: "Behind the Scenes",
         categorySlug: "behind-the-scenes",
-        excerpt: "Why do international cricket bats cost over ₹1,000,000? From English Willow grades to custom sweet spots, the secret science of bat making.",
+        description: "Why do international cricket bats cost over ₹1,000,000? From English Willow grades to custom sweet spots, the secret science of bat making.", readTime: "8 min read", featured: false,
         image: "/articles/cost-of-making-international-cricket-bat/featured.png"
     },
     {
@@ -94,7 +94,7 @@ const ARTICLES = [
         date: "2026-06-23T10:00:00Z",
         category: "Untold Stories",
         categorySlug: "untold-stories",
-        excerpt: "Carrying drinks, mixing energy powders, and watching others live your dream. The psychological reality of being a reserve player in the Indian cricket team.",
+        description: "Carrying drinks, mixing energy powders, and watching others live your dream. The psychological reality of being a reserve player in the Indian cricket team.", readTime: "8 min read", featured: false,
         image: "/articles/loneliest-job-in-cricket-12th-man-reality/featured.jpg"
     },
     {
@@ -103,7 +103,7 @@ const ARTICLES = [
         date: "2026-06-22T10:00:00Z",
         category: "Rise to Fame",
         categorySlug: "rise-to-fame",
-        excerpt: "There is batting, and then there is art. Why Smriti Mandhana's cover drive is the most aesthetically pleasing shot in modern cricket, male or female.",
+        description: "There is batting, and then there is art. Why Smriti Mandhana's cover drive is the most aesthetically pleasing shot in modern cricket, male or female.", readTime: "8 min read", featured: false,
         image: "/articles/smriti-mandhana-most-elegant-batter-world-cricket/featured.jpg"
     },
     {
@@ -112,7 +112,7 @@ const ARTICLES = [
         date: "2026-06-21T10:00:00Z",
         category: "Behind the Scenes",
         categorySlug: "behind-the-scenes",
-        excerpt: "From Trent Boult to Shaheen Afridi to Mitchell Starc, left-arm fast bowlers have been India's kryptonite for a decade. What's the technical reason behind this collapse?",
+        description: "From Trent Boult to Shaheen Afridi to Mitchell Starc, left-arm fast bowlers have been India's kryptonite for a decade. What's the technical reason behind this collapse?", readTime: "8 min read", featured: false,
         image: "/articles/why-left-arm-pacers-destroy-india-top-order/featured.webp"
     },
     {
@@ -121,7 +121,7 @@ const ARTICLES = [
         date: "2026-06-20T10:00:00Z",
         category: "Untold Stories",
         categorySlug: "untold-stories",
-        excerpt: "MS Dhoni's run out broke a billion hearts, but the 2019 World Cup semi-final was lost due to a controversial rule nobody talks about anymore.",
+        description: "MS Dhoni's run out broke a billion hearts, but the 2019 World Cup semi-final was lost due to a controversial rule nobody talks about anymore.", readTime: "8 min read", featured: false,
         image: "/articles/the-2019-world-cup-heartbreak-rule-cost-india-the-cup/featured.png"
     },
     { title: "Why Indian Fast Bowlers Break Down Every 6 Months. The Ugly Truth Nobody Wants to Hear", slug: "why-indian-fast-bowlers-break-down-every-6-months", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bumrah, Shami, Bhuvi — India keeps losing its best pace bowlers. Here's the ugly truth about IPL workload and BCCI scheduling.", image: "/articles/why-indian-fast-bowlers-break-down-every-6-months/featured.jpg", date: "2026-06-18", readTime: "8 min read", featured: false },
