@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="max-image-preview:large">
+    <title>All Articles — CricketHub</title>
+    <meta name="description" content="Browse all original, deeply researched cricket stories, legendary moments, and untold chapters published on CricketHub.">
+    <link rel="canonical" href="https://crickethub.co.in/pages/all-articles">
+    <meta property="og:title" content="All Articles — CricketHub">
+    <meta property="og:description" content="Browse all original cricket stories on CricketHub.">
+    <meta property="og:url" content="https://crickethub.co.in/pages/all-articles">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CricketHub">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="All Articles — CricketHub">
+    <meta name="twitter:description" content="Browse all original cricket stories on CricketHub.">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://crickethub.co.in/"},{"@type":"ListItem","position":2,"name":"All Articles"}]}
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMWKQMGFR2"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EMWKQMGFR2');</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5405462456191304" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+    <a href="/" class="logo"><div class="logo-icon">🏏</div> CricketHub</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="navLinks">
+        <a href="/">Home</a>
+        <a href="/category/untold-stories/" >Untold Stories</a>
+        <a href="/category/rise-to-fame/">Rise to Fame</a>
+        <a href="/category/behind-the-scenes/">Behind the Scenes</a>
+        <a href="/category/legendary-moments/">Legendary Moments</a>
+        <a href="/pages/about">About</a>
+    </div>
+</nav>
+
+<main>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span class="separator">›</span> <span class="current">All Articles</span>
+    </nav>
+
+    <div class="category-hero">
+        <h1>📚 <span class="gradient-text">All Articles</span></h1>
+        <p>Browse through all our deeply researched cricket stories, from legendary moments to behind the scenes dressing room drama.</p>
+        <span class="article-count"><i class="fas fa-newspaper"></i> <span id="catCount">0</span> Stories</span>
+    </div>
+
+    <section class="section" style="padding-top: 20px;">
+        <div class="container">
+            <div class="articles-grid stagger-children" id="categoryGrid">
+                <!-- Articles loaded dynamically -->
+            </div>
+            <div id="emptyCat" class="newsletter-section" style="margin-top: 24px;">
+                <div style="font-size: 3rem; margin-bottom: 16px;">🤫</div>
+                <h2>Stories Coming Soon!</h2>
+                <p>We're uncovering the most incredible untold stories. Check back soon or subscribe to get notified.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="newsletter-section fade-in">
+                <h2>Never Miss a <span class="gradient-text">Story</span></h2>
+                <p>Get the most incredible untold cricket stories delivered straight to your inbox.</p>
+                <form class="newsletter-form" onsubmit="return handleNewsletter(event)">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email address" id="newsletterEmail">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <div class="logo"><div class="logo-icon">🏏</div> CricketHub</div>
+            <p>Untold cricket stories, legendary moments, and the human side of cricket that you never knew.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Categories</h4>
+            <ul>
+                <li><a href="/category/untold-stories/">Untold Stories</a></li>
+                <li><a href="/category/rise-to-fame/">Rise to Fame</a></li>
+                <li><a href="/category/behind-the-scenes/">Behind the Scenes</a></li>
+                <li><a href="/category/legendary-moments/">Legendary Moments</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/pages/about">About Us</a></li>
+                <li><a href="/pages/contact">Contact</a></li>
+                <li><a href="/pages/sitemap-page">Sitemap</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="/pages/privacy">Privacy Policy</a></li>
+                <li><a href="/pages/terms">Terms of Service</a></li>
+                <li><a href="/pages/disclaimer">Disclaimer</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 CricketHub.co.in. All rights reserved. | Built with ❤️ for cricket lovers</div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" style="display:none;">
+    <span>We use cookies to improve your experience. <a href="/pages/privacy">Privacy Policy</a>.</span>
+    <button onclick="acceptCookies()">Accept</button>
+</div>
+
+<script src="/index.js"></script>
+<script>
+    // Filter articles for this category
+    document.addEventListener('DOMContentLoaded', () => {
+        const catArticles = ARTICLES;
+        const grid = document.getElementById('categoryGrid');
+        const empty = document.getElementById('emptyCat');
+        const count = document.getElementById('catCount');
+        
+        if (count) count.textContent = catArticles.length;
+        
+        if (catArticles.length === 0) { empty.style.display = ''; return; }
+        empty.style.display = 'none';
+        
+        grid.innerHTML = catArticles.map(a => `
+            <a href="/articles/${a.slug}/" class="article-card fade-in">
+                <div class="card-image-wrapper"><img src="${a.image}" alt="${a.title}" loading="lazy"></div>
+                <div class="card-body">
+                    <span class="category-badge">${a.category}</span>
+                    <h3>${a.title}</h3>
+                    <p>${a.description}</p>
+                    <div class="article-meta">
+                        <span><i class="fas fa-user"></i> CricketHub</span>
+                        <span><i class="fas fa-calendar"></i> ${formatDate(a.date)}</span>
+                        <span><i class="fas fa-clock"></i> ${a.readTime}</span>
+                    </div>
+                </div>
+            </a>
+        `).join('');
+        
+        grid.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+    });
+</script>
+</body>
+</html>
