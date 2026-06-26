@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -123,7 +123,9 @@
 <script>
     // Filter articles for this category
     document.addEventListener('DOMContentLoaded', () => {
-        const catArticles = ARTICLES.filter(a => a.categorySlug === 'untold-stories');
+        const today = new Date();
+        today.setHours(23, 59, 59, 999);
+        const catArticles = ARTICLES.filter(a => a.categorySlug === 'untold-stories' && new Date(a.date) <= today);
         const grid = document.getElementById('categoryGrid');
         const empty = document.getElementById('emptyCat');
         const count = document.getElementById('catCount');
