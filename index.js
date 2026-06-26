@@ -59,7 +59,7 @@ const ARTICLES = [
         category: "Untold Stories",
         categorySlug: "untold-stories",
         description: "Between the explosion of T20 leagues and the prestige of Test cricket, the 50-over format is dying a slow, quiet death. Here is why ODI cricket is fading away.", readTime: "8 min read", featured: false,
-        image: "/articles/slow-death-of-odi-cricket-50-overs-disappearing/featured.avif"
+        image: "/articles/slow-death-of-odi-cricket-50-overs-disappearing/featured.webp"
     },
     {
         title: "Why Umpiring is the Most Thankless Job in Cricket",
@@ -68,7 +68,7 @@ const ARTICLES = [
         category: "Behind the Scenes",
         categorySlug: "behind-the-scenes",
         description: "One mistake and the world hates you. Technology exposes every error. The psychological toll of being a cricket umpire in the modern era.", readTime: "8 min read", featured: false,
-        image: "/articles/why-umpiring-most-thankless-job-in-cricket/featured.jpg"
+        image: "/articles/why-umpiring-most-thankless-job-in-cricket/featured.webp"
     },
     {
         title: "The 175 That Changed Cricket: When Kapil Dev Saved India",
@@ -77,7 +77,7 @@ const ARTICLES = [
         category: "Legendary Moments",
         categorySlug: "legendary-moments",
         description: "In 1983, India was 17/5 against Zimbabwe. Kapil Dev walked in and scored 175*. But there is no video footage of the greatest innings in Indian cricket history.", readTime: "8 min read", featured: false,
-        image: "/articles/175-that-changed-cricket-kapil-dev-1983/featured.jpg"
+        image: "/articles/175-that-changed-cricket-kapil-dev-1983/featured.webp"
     },
     {
         title: "The ₹1 Lakh Bat: What Actually Goes Into Making an International Cricket Bat?",
@@ -86,7 +86,7 @@ const ARTICLES = [
         category: "Behind the Scenes",
         categorySlug: "behind-the-scenes",
         description: "Why do international cricket bats cost over ₹1,000,000? From English Willow grades to custom sweet spots, the secret science of bat making.", readTime: "8 min read", featured: false,
-        image: "/articles/cost-of-making-international-cricket-bat/featured.png"
+        image: "/articles/cost-of-making-international-cricket-bat/featured.webp"
     },
     {
         title: "The Loneliest Job in Cricket: What It Actually Feels Like to Be the 12th Man",
@@ -95,7 +95,7 @@ const ARTICLES = [
         category: "Untold Stories",
         categorySlug: "untold-stories",
         description: "Carrying drinks, mixing energy powders, and watching others live your dream. The psychological reality of being a reserve player in the Indian cricket team.", readTime: "8 min read", featured: false,
-        image: "/articles/loneliest-job-in-cricket-12th-man-reality/featured.jpg"
+        image: "/articles/loneliest-job-in-cricket-12th-man-reality/featured.webp"
     },
     {
         title: "Smriti Mandhana: Why She Is The Most Elegant Batter in World Cricket Right Now",
@@ -104,7 +104,7 @@ const ARTICLES = [
         category: "Rise to Fame",
         categorySlug: "rise-to-fame",
         description: "There is batting, and then there is art. Why Smriti Mandhana's cover drive is the most aesthetically pleasing shot in modern cricket, male or female.", readTime: "8 min read", featured: false,
-        image: "/articles/smriti-mandhana-most-elegant-batter-world-cricket/featured.jpg"
+        image: "/articles/smriti-mandhana-most-elegant-batter-world-cricket/featured.webp"
     },
     {
         title: "Why Left-Arm Pacers Always Destroy India's Top Order",
@@ -122,19 +122,19 @@ const ARTICLES = [
         category: "Untold Stories",
         categorySlug: "untold-stories",
         description: "MS Dhoni's run out broke a billion hearts, but the 2019 World Cup semi-final was lost due to a controversial rule nobody talks about anymore.", readTime: "8 min read", featured: false,
-        image: "/articles/the-2019-world-cup-heartbreak-rule-cost-india-the-cup/featured.png"
+        image: "/articles/the-2019-world-cup-heartbreak-rule-cost-india-the-cup/featured.webp"
     },
-    { title: "Why Indian Fast Bowlers Break Down Every 6 Months. The Ugly Truth Nobody Wants to Hear", slug: "why-indian-fast-bowlers-break-down-every-6-months", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bumrah, Shami, Bhuvi — India keeps losing its best pace bowlers. Here's the ugly truth about IPL workload and BCCI scheduling.", image: "/articles/why-indian-fast-bowlers-break-down-every-6-months/featured.jpg", date: "2026-06-18", readTime: "8 min read", featured: false },
-    { title: "MS Dhoni's Last Night as a CSK Player. The Farewell Nobody Filmed", slug: "ms-dhoni-last-night-csk-farewell-nobody-filmed", category: "Untold Stories", categorySlug: "untold-stories", description: "MS Dhoni played his last IPL match. No announcement. No grand farewell. Here's what happened when the cameras stopped rolling.", image: "/articles/ms-dhoni-last-night-csk-farewell-nobody-filmed/featured.png", date: "2026-06-16", readTime: "9 min read", featured: false },
-    { title: "What Happens When the IPL Stops Calling Your Name", slug: "what-happens-when-ipl-stops-calling-your-name", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Every IPL auction creates millionaires. But what happens to the players who stop getting bought? The silence nobody prepares you for.", image: "/articles/what-happens-when-ipl-stops-calling-your-name/featured.png", date: "2026-06-14", readTime: "8 min read", featured: false },
-    { title: "Kane Williamson Just Retired. He Was the Quietest Great Cricketer We'll Ever See", slug: "kane-williamson-retired-quietest-great-cricketer", category: "Legendary Moments", categorySlug: "legendary-moments", description: "Kane Williamson retired today. 19,346 runs, 48 centuries, WTC champion, Fab Four member. No drama, no noise. Just pure cricket.", image: "/articles/kane-williamson-retired-quietest-great-cricketer/featured.avif", date: "2026-06-12", readTime: "8 min read", featured: false },
-    { title: "They Called Him the Next Dhoni. Then CSK Finished 8th and Everything Fell Apart", slug: "ruturaj-gaikwad-next-dhoni-csk-finished-8th", category: "Rise to Fame", categorySlug: "rise-to-fame", description: "Ruturaj Gaikwad went from Orange Cap winner to CSK's worst season ever. The captaincy crushed his batting, critics piled on, and Dhoni's shadow never left.", image: "/articles/ruturaj-gaikwad-next-dhoni-csk-finished-8th/featured.jpg", date: "2026-06-09", readTime: "8 min read", featured: false },
-    { title: "Your Favourite IPL Star Earns ₹16 Crore. Here's What He Actually Takes Home", slug: "ipl-salary-what-cricketers-actually-take-home", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "IPL auction prices look massive. But after tax, agent fees, and hidden costs, a ₹16 crore contract shrinks fast. Here's what cricketers actually earn.", image: "/articles/ipl-salary-what-cricketers-actually-take-home/featured.jpg", date: "2026-06-05", readTime: "7 min read", featured: false },
+    { title: "Why Indian Fast Bowlers Break Down Every 6 Months. The Ugly Truth Nobody Wants to Hear", slug: "why-indian-fast-bowlers-break-down-every-6-months", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bumrah, Shami, Bhuvi — India keeps losing its best pace bowlers. Here's the ugly truth about IPL workload and BCCI scheduling.", image: "/articles/why-indian-fast-bowlers-break-down-every-6-months/featured.webp", date: "2026-06-18", readTime: "8 min read", featured: false },
+    { title: "MS Dhoni's Last Night as a CSK Player. The Farewell Nobody Filmed", slug: "ms-dhoni-last-night-csk-farewell-nobody-filmed", category: "Untold Stories", categorySlug: "untold-stories", description: "MS Dhoni played his last IPL match. No announcement. No grand farewell. Here's what happened when the cameras stopped rolling.", image: "/articles/ms-dhoni-last-night-csk-farewell-nobody-filmed/featured.webp", date: "2026-06-16", readTime: "9 min read", featured: false },
+    { title: "What Happens When the IPL Stops Calling Your Name", slug: "what-happens-when-ipl-stops-calling-your-name", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Every IPL auction creates millionaires. But what happens to the players who stop getting bought? The silence nobody prepares you for.", image: "/articles/what-happens-when-ipl-stops-calling-your-name/featured.webp", date: "2026-06-14", readTime: "8 min read", featured: false },
+    { title: "Kane Williamson Just Retired. He Was the Quietest Great Cricketer We'll Ever See", slug: "kane-williamson-retired-quietest-great-cricketer", category: "Legendary Moments", categorySlug: "legendary-moments", description: "Kane Williamson retired today. 19,346 runs, 48 centuries, WTC champion, Fab Four member. No drama, no noise. Just pure cricket.", image: "/articles/kane-williamson-retired-quietest-great-cricketer/featured.webp", date: "2026-06-12", readTime: "8 min read", featured: false },
+    { title: "They Called Him the Next Dhoni. Then CSK Finished 8th and Everything Fell Apart", slug: "ruturaj-gaikwad-next-dhoni-csk-finished-8th", category: "Rise to Fame", categorySlug: "rise-to-fame", description: "Ruturaj Gaikwad went from Orange Cap winner to CSK's worst season ever. The captaincy crushed his batting, critics piled on, and Dhoni's shadow never left.", image: "/articles/ruturaj-gaikwad-next-dhoni-csk-finished-8th/featured.webp", date: "2026-06-09", readTime: "8 min read", featured: false },
+    { title: "Your Favourite IPL Star Earns ₹16 Crore. Here's What He Actually Takes Home", slug: "ipl-salary-what-cricketers-actually-take-home", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "IPL auction prices look massive. But after tax, agent fees, and hidden costs, a ₹16 crore contract shrinks fast. Here's what cricketers actually earn.", image: "/articles/ipl-salary-what-cricketers-actually-take-home/featured.webp", date: "2026-06-05", readTime: "7 min read", featured: false },
     { title: "28 Wickets, 2 IPL Titles, and Still No India Call. The Bhuvneshwar Kumar Story Nobody Talks About", slug: "bhuvneshwar-kumar-28-wickets-2-ipl-titles-still-no-india-call", category: "Behind the Scenes", categorySlug: "behind-the-scenes", description: "Bhuvneshwar Kumar took 28 wickets in IPL 2026, helped RCB win back-to-back titles, crossed 350 T20 wickets. India still hasn't called.", image: "/articles/bhuvneshwar-kumar-28-wickets-2-ipl-titles-still-no-india-call/featured.webp", date: "2026-06-04", readTime: "8 min read", featured: false },
-    { title: "The Six That Completed the Dream: Virat Kohli and RCB's Back-to-Back IPL Title", slug: "the-six-that-completed-the-dream-virat-kohli-ipl-2026-final", category: "Legendary Moments", categorySlug: "legendary-moments", description: "Virat Kohli hit the winning six in the IPL 2026 final. RCB became back-to-back champions. After 16 years of heartbreak, here's what that moment really meant.", image: "/articles/the-six-that-completed-the-dream-virat-kohli-ipl-2026-final/featured.jpg", date: "2026-06-03", readTime: "8 min read", featured: false },
-    { title: "He's 15 and He Just Broke the IPL. Not Everyone's Happy About It", slug: "vaibhav-suryavanshi-15-year-old-who-broke-ipl", category: "Untold Stories", categorySlug: "untold-stories", description: "Vaibhav Suryavanshi is 15. He just smashed 776 runs, hit 72 sixes, and broke Chris Gayle's record. But not everyone is cheering.", image: "/articles/vaibhav-suryavanshi-15-year-old-who-broke-ipl/featured.png", date: "2026-05-30", readTime: "7 min read", featured: false },
-    { title: "The Next Sachin Who Never Made It: The Manish Pandey Story", slug: "the-next-sachin-who-never-made-it-the-manish-pandey-story", category: "Untold Stories", categorySlug: "untold-stories", description: "Before Virat Kohli became India's biggest star, many believed Manish Pandey would be India's next cricket superstar. What really happened?", image: "/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/featured.jpg", date: "2026-05-29", readTime: "6 min read", featured: false },
-    { title: "The Night Virat Kohli Almost Quit Cricket", slug: "the-night-virat-kohli-almost-quit-cricket", category: "Untold Stories", categorySlug: "untold-stories", description: "On the night his father passed away, 18-year-old Virat Kohli made a decision nobody expected. This is the story cricket never puts in the highlight reels.", image: "/articles/the-night-virat-kohli-almost-quit-cricket/featured.avif", date: "2026-05-28", readTime: "6 min read", featured: false },
+    { title: "The Six That Completed the Dream: Virat Kohli and RCB's Back-to-Back IPL Title", slug: "the-six-that-completed-the-dream-virat-kohli-ipl-2026-final", category: "Legendary Moments", categorySlug: "legendary-moments", description: "Virat Kohli hit the winning six in the IPL 2026 final. RCB became back-to-back champions. After 16 years of heartbreak, here's what that moment really meant.", image: "/articles/the-six-that-completed-the-dream-virat-kohli-ipl-2026-final/featured.webp", date: "2026-06-03", readTime: "8 min read", featured: false },
+    { title: "He's 15 and He Just Broke the IPL. Not Everyone's Happy About It", slug: "vaibhav-suryavanshi-15-year-old-who-broke-ipl", category: "Untold Stories", categorySlug: "untold-stories", description: "Vaibhav Suryavanshi is 15. He just smashed 776 runs, hit 72 sixes, and broke Chris Gayle's record. But not everyone is cheering.", image: "/articles/vaibhav-suryavanshi-15-year-old-who-broke-ipl/featured.webp", date: "2026-05-30", readTime: "7 min read", featured: false },
+    { title: "The Next Sachin Who Never Made It: The Manish Pandey Story", slug: "the-next-sachin-who-never-made-it-the-manish-pandey-story", category: "Untold Stories", categorySlug: "untold-stories", description: "Before Virat Kohli became India's biggest star, many believed Manish Pandey would be India's next cricket superstar. What really happened?", image: "/articles/the-next-sachin-who-never-made-it-the-manish-pandey-story/featured.webp", date: "2026-05-29", readTime: "6 min read", featured: false },
+    { title: "The Night Virat Kohli Almost Quit Cricket", slug: "the-night-virat-kohli-almost-quit-cricket", category: "Untold Stories", categorySlug: "untold-stories", description: "On the night his father passed away, 18-year-old Virat Kohli made a decision nobody expected. This is the story cricket never puts in the highlight reels.", image: "/articles/the-night-virat-kohli-almost-quit-cricket/featured.webp", date: "2026-05-28", readTime: "6 min read", featured: false },
     // Example article object (uncomment and modify when you have articles):
     // {
     //     title: "The Night Virat Kohli Almost Quit Cricket",
@@ -142,7 +142,7 @@ const ARTICLES = [
     //     category: "Untold Stories",
     //     categorySlug: "untold-stories",
     //     description: "Before becoming the greatest run-chaser in cricket history, there was a night when a young Virat Kohli wanted to give up everything.",
-    //     image: "/articles/virat-kohli-almost-quit-cricket/featured.jpg",
+    //     image: "/articles/virat-kohli-almost-quit-cricket/featured.webp",
     //     date: "2026-06-01",
     //     readTime: "8 min read",
     //     featured: true
