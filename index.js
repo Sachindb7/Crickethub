@@ -53,6 +53,17 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 // you add its metadata here. The homepage reads from this array.
 const ARTICLES = [
     {
+        title: "The Real Reason Sourav Ganguly Made MS Dhoni Captain in 2007 (And Why Seniors Were Angry)",
+        slug: "real-reason-sourav-ganguly-made-ms-dhoni-captain-2007",
+        date: "2026-06-28T10:00:00Z",
+        category: "Untold Stories",
+        categorySlug: "untold-stories",
+        description: "In 2007, Sourav Ganguly and Sachin Tendulkar handed the captaincy to a 26-year-old MS Dhoni. Here is the untold inside story of what happened behind closed doors.",
+        readTime: "8 min read",
+        featured: false,
+        image: "/articles/real-reason-sourav-ganguly-made-ms-dhoni-captain-2007/featured.webp"
+    },
+    {
         title: "The Slow Death of ODI Cricket: Why 50-Over Matches Are Disappearing Forever",
         slug: "slow-death-of-odi-cricket-50-overs-disappearing",
         date: "2026-06-27T10:00:00Z",
