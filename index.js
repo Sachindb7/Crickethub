@@ -53,6 +53,17 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 // you add its metadata here. The homepage reads from this array.
 const ARTICLES = [
     {
+        title: "Why Virat Kohli Never Left RCB: The 2011 Secret Meeting That Changed IPL History",
+        slug: "why-virat-kohli-never-left-rcb-2011-secret-meeting",
+        date: "2026-07-01T10:00:00Z",
+        category: "Legendary Moments",
+        categorySlug: "legendary-moments",
+        description: "Every mega auction, every franchise came calling. Virat Kohli stayed at RCB for 17 years. Here is the untold story of the 2011 meeting that sealed his loyalty.",
+        readTime: "9 min read",
+        featured: false,
+        image: "/articles/why-virat-kohli-never-left-rcb-2011-secret-meeting/featured.webp"
+    },
+    {
         title: "The Real Reason Sourav Ganguly Made MS Dhoni Captain in 2007 (And Why Seniors Were Angry)",
         slug: "real-reason-sourav-ganguly-made-ms-dhoni-captain-2007",
         date: "2026-06-28T10:00:00Z",
