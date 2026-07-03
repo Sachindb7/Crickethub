@@ -53,6 +53,17 @@ document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 // you add its metadata here. The homepage reads from this array.
 const ARTICLES = [
     {
+        title: "Why Rohit Sharma Cried After the 2023 World Cup Final: The Dressing Room Story Nobody Filmed",
+        slug: "why-rohit-sharma-cried-2023-world-cup-final-dressing-room",
+        date: "2026-07-03T10:00:00Z",
+        category: "Legendary Moments",
+        categorySlug: "legendary-moments",
+        description: "Rohit Sharma played selfless cricket for 45 days. When India lost the 2023 World Cup Final, the dressing room saw a side of him nobody filmed. Here is the untold story.",
+        readTime: "8 min read",
+        featured: false,
+        image: "/articles/why-rohit-sharma-cried-2023-world-cup-final-dressing-room/featured.webp"
+    },
+    {
         title: "Why Virat Kohli Never Left RCB: The 2011 Secret Meeting That Changed IPL History",
         slug: "why-virat-kohli-never-left-rcb-2011-secret-meeting",
         date: "2026-07-01T10:00:00Z",
